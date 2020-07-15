@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Kollo in Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "npm: start:debug",
+            "url": "http://localhost:8080/index.html",
+            "userDataDir": true,
+            "webRoot": "${workspaceFolder}/src/client",
+            "sourceMaps": true,
+            "trace": true,
+            "breakOnLoad": true
+        },
+        {
+            "name": "Attach Kollo to Chrome",
+            "type": "chrome",
+            "request": "attach",
+            "preLaunchTask": "npm: start:debug",
+            "urlFilter": "http://localhost:8080/*",
+            "sourceMaps": true,
+            "trace": true,
+            "webRoot": "${workspaceFolder}/src/client",
+            "port": 9222
+        }]
+}
