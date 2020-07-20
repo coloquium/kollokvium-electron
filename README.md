@@ -46,9 +46,54 @@ TDB
 `ctrl-b` Start/stop recording of each stream individually. 
 
 
-## Install 
+## Install & build
 
-clone the repository and run `npm install`  see package.json for build scripts.
+This repo used the offical kollokvium.se backend ( signaling etc.)    You can mofify settings.json if you want another configuration ( before build )
+
+### Step 0
+
+Clone the repository
+
+
+### Step 1 
+
+Make sure you got electron-builder CLI installed so you can run build
+
+`npm insall electron-builder -g`
+
+###  Step 2
+
+Install dependencies.
+
+`npm install` 
+
+#### Note
+
+Yoy may need to run `npm run postinstall` also
+
+### Step 3
+
+Build
+
+`npm run build`
+
+
+### Step 4
+
+Create electron packages.    Outputs to `/release/`
+
+
+### Step 5
+
+Run the application from `/release/`
+
+
+
+## Other
+
+
+
+
 
 
 Regards
